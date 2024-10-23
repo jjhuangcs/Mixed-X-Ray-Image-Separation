@@ -14,8 +14,9 @@ Pytorch implementation for "Mixed X-Ray Image Separation for Artworks with Conce
 * Python
 * torchvision
 * PyTorch>=1.0
-* OpenCV for Python
-* HDF5 for Python
+* pywt
+* math
+* Pillow
 * tensorboardX (Tensorboard for Python)
 
 # 2. Usage
