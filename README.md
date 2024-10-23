@@ -2,7 +2,8 @@
 
 <!--![visitors](https://visitor-badge.glitch.me/badge?page_id=jjhuangcs/WINNet)-->
 
-[Jun-Jie Huang](https://jjhuangcs.github.io/) (jjhuang@nudt.edu.cn) and [Pier Luigi Dragotti](http://www.commsp.ee.ic.ac.uk/~pld/)
+[Pu Wei], [Jun-Jie Huang](https://jjhuangcs.github.io/) (jjhuang@nudt.edu.cn) [Barak Sober], [Nathan Daly], [Catherine Higgitt], [Ingrid Daubechies], [Pier Luigi Dragotti](http://www.commsp.ee.ic.ac.uk/~pld/) and [
+Miguel Rodrigues]
 
 Pytorch implementation for "WINNet: Wavelet-inspired Invertible Network for Image Denoising" (TIP'2022).
 
