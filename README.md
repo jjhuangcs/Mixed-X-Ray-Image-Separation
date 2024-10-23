@@ -2,7 +2,7 @@
 
 <!--![visitors](https://visitor-badge.glitch.me/badge?page_id=jjhuangcs/WINNet)-->
 
-Pu Wei#, [Jun-Jie Huang](https://jjhuangcs.github.io/)#* (jjhuang@nudt.edu.cn) Barak Sober, Nathan Daly, Catherine Higgitt, Ingrid Daubechies, [Pier Luigi Dragotti](http://www.commsp.ee.ic.ac.uk/~pld/) and 
+Pu Wei#, [Jun-Jie Huang](https://jjhuangcs.github.io/)#* (jjhuang@nudt.edu.cn), Barak Sober, Nathan Daly, Catherine Higgitt, Ingrid Daubechies, [Pier Luigi Dragotti](http://www.commsp.ee.ic.ac.uk/~pld/) and 
 Miguel Rodrigues (#co-first author, *corresponding author)
 
 The proposed separation network consists of two components: the analysis and the synthesis sub-networks. The analysis sub-network is based on learned coupled iterative shrinkage thresholding algorithms (LCISTA) designed using algorithm unrolling techniques, and the synthesis sub-network consists of several linear mappings. The learning algorithm operates in a totally self-supervised fashion without requiring a sample set that contains both the mixed X-ray images and the separated ones.
