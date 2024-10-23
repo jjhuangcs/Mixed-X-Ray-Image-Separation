@@ -86,11 +86,14 @@ def np_to_torch(img_np):
 #########################################################################################
 
 parser = argparse.ArgumentParser(description='PyTorch Image Separation')
-parser.add_argument('--nEpochs', type=int, default=120, help='number of epochs to train for')
+parser.add_argument('--visible', type=str, required=True, help='The file name of the visible image')
+parser.add_argument('--xray', type=str, required=True, help='The file name of the xray image')
+parser.add_argument('--gray', type=str, required=True, help='The file name of the gray image')
+parser.add_argument('--nEpochs', type=int, default=120, help='Number of epochs to train for')
 parser.add_argument('--lr', type=float, default=0.001, help='Learning Rate. Default=0.01')
-parser.add_argument('--cuda', default=True, help='use cuda?')
-parser.add_argument('--threads', type=int, default=4, help='number of threads for data loader to use')
-parser.add_argument('--seed', type=int, default=12345, help='random seed to use. Default=123')
+parser.add_argument('--cuda', default=True, help='Use cuda?')
+parser.add_argument('--threads', type=int, default=4, help='Number of threads for data loader to use')
+parser.add_argument('--seed', type=int, default=12345, help='Random seed to use. Default=123')
 parser.add_argument("--step", type=int, default=40, help="Sets the learning rate to the initial LR decayed by momentum every n epochs, Default=5")
 opt = parser.parse_args()
 
@@ -120,12 +123,11 @@ patchsize = 64
 stride = 16
 # cut images into patches with patch size as patchsize = 64 and with stride as stride  = 16
 
-image_data = Image.open("Goya_r1.jpg")  # visible image
+image_data = Image.open(opt.visible)  # visible image
 rgb1 = np.asarray(image_data, dtype="float32")
-
-image_data = Image.open("Goya_x.jpg")  # Xray image
+image_data = Image.open(opt.xray)  # Xray image
 xray_data = np.asarray(image_data, dtype="float32")
-image_data = Image.open("Goya_g1.jpg")  # gray scale image
+image_data = Image.open(opt.gray)  # gray scale image
 gray = np.asarray(image_data, dtype="float32")
 xray = np.empty((xray_data.shape[0], xray_data.shape[1], 1), dtype="float32")
 xray[:, :, 0] = xray_data
